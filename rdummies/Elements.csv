@@ -1,0 +1,11 @@
+Atomic number,Name,Symbol,Group,Period,Block,State at STP,Occurrence,Description
+1,Hydrogen,H,1,1,s,Gas,Primordial,Non-metal
+2,Helium,He,18,1,s,Gas,Primordial,Noble gas
+3,Lithium,Li,1,2,s,Solid,Primordial,Alkali metal
+4,Beryllium,Be,2,2,s,Solid,Primordial,Alkaline earth metal
+5,Boron,B,13,2,p,Solid,Primordial,Metalloid
+6,Carbon,C,14,2,p,Solid,Primordial,Non-metal
+7,Nitrogen,N,15,2,p,Gas,Primordial,Non-metal
+8,Oxygen,O,16,2,p,Gas,Primordial,Non-metal
+9,Fluorine,F,17,2,p,Gas,Primordial,Halogen
+10,Neon,Ne,18,2,p,Gas,Primordial,Noble gas
