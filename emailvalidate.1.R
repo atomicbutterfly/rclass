@@ -78,10 +78,18 @@ if (summarize) {
       #how about we apply the same logic again to split the domains at the .?
       #problem with emails in the format vrml.k12.la.us which have multple dots in domain.
       #domain.end<-regexpr(".[A-Z][a-z]",domain) #returns -1 or 1 df
-      domain.end<-grep(".org$",domain, perl= TRUE, value= TRUE) #testing with .uk. 
+      domain.end<-grep("\w$",domain, value= TRUE) #testing with .uk. 
       #code above works for finding last .uk in string. need to do this with our list of extensions
       #also need to eliminate parts before the final dot or it won't match vector or valid domains..or can we use wildcards to remedy this?
+
+     #cleave.domain<-strsplit(domain, domain.end)
+     #domain.name<-sapply(cleave.domain, "[", 1)
+     #sub.domain<-sapply(cleave.domain, "[", 2)
       print(domain.end)
+
+     # if (!( valid.domains %in% domain.end )) {
+      	
+      #}
 
       }
 
