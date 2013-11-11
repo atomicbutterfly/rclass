@@ -68,7 +68,7 @@ if (summarize) {
       if (!( email %in% valid.domains)){
 
 
-      print("Inavild Domains found:")
+      print("Domains emailed:")
       #invalids<-subset(ReadFile[,10],!(ReadFile[,10] %in% valid.domains)) original line
       invalids<-subset(domain,!(ReadFile[,10] %in% valid.domains)) #returns the full domains .e.g gmail.com. not domain extesions...can use this to count number of times each domain appears in bounce report
 
@@ -78,10 +78,10 @@ if (summarize) {
       #how about we apply the same logic again to split the domains at the .?
       #problem with emails in the format vrml.k12.la.us which have multple dots in domain.
       #domain.end<-regexpr(".[A-Z][a-z]",domain) #returns -1 or 1 df
-      domain.end<-grep(".org$",domain, perl= TRUE, value= TRUE) #testing with .uk. 
+      #domain.end<-grep(".org$",domain, perl= TRUE, value= TRUE) #testing with .uk. 
       #code above works for finding last .uk in string. need to do this with our list of extensions
       #also need to eliminate parts before the final dot or it won't match vector or valid domains..or can we use wildcards to remedy this?
-      print(domain.end)
+      #print(domain.end)
 
       }
 
